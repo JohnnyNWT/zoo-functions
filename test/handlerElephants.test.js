@@ -6,7 +6,7 @@ describe('Testes da função HandlerElephants', () => {
   });
 
   it('Verifica se para o argumento "names" retorna um array de nomes que possui o nome "Jefferson"', () => {
-    expect(handlerElephants('names')).toEqual([ 'Ilana', 'Orval', 'Bea', 'Jefferson' ]);
+    expect(handlerElephants('names')).toEqual(['Ilana', 'Orval', 'Bea', 'Jefferson']);
   });
 
   it('Verifica se para o argumento "averageAge" retorna um número próximo a "10.5"', () => {
