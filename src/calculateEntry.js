@@ -23,9 +23,9 @@ function calculateEntry(entrants) {
   const arrPrices = [prices];
   const participantes = countEntrants(entrants);
   arrPrices.forEach((element) => {
-    inputValue = element.adult * participantes.adult +
-    element.senior * participantes.senior +
-    element.child * participantes.child;
+    inputValue = element.adult * participantes.adult 
+    + element.senior * participantes.senior 
+    + element.child * participantes.child;
   });
   return inputValue;
 }
