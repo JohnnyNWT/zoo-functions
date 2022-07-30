@@ -1,6 +1,14 @@
 const handlerElephants = require('../src/handlerElephants');
 
 describe('Testes da função HandlerElephants', () => {
+  it('Verifica se algum parametro é passado', () => {
+    expect(handlerElephants()).toBeUndefined();
+  });
+
+  it('Verifica se o parametro passado é uma string', () => {
+    expect(handlerElephants(69)).toBe('Parâmetro inválido, é necessário uma string');
+  });
+
   it('Verifica se para o argumento "count" retorna o número inteiro "4"', () => {
     expect(handlerElephants('count')).toEqual(4);
   });
