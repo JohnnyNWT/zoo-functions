@@ -1,7 +1,6 @@
 const getOpeningHours = require('../src/getOpeningHours');
 
 describe('Testes da função getOpeningHours', () => {
-
   it('Verifica se quando passado nenhum parametro retorna um objeto', () => {
     const obj = {
       Tuesday: { open: 8, close: 6 },
