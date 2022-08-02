@@ -8,5 +8,5 @@ function countAnimals(animal) {
   }
   return animalSpecie.residents.length;
 }
-console.log(countAnimals({ specie: 'giraffes'}))
+
 module.exports = countAnimals;
