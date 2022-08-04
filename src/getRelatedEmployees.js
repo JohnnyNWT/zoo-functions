@@ -13,13 +13,13 @@ function getRelatedEmployees(managerId) {
   if (!isManager(managerId)) {
     throw new Error('O id inserido não é de uma pessoa colaboradora gerente!');
   }
-  let managers = [];
+  const gerentes = [];
   data.employees.forEach((element) => {
     if (element.managers.some((manager) => manager === managerId) === true) {
-      managers.push(`${element.firstName} ${element.lastName}`);
+      gerentes.push(`${element.firstName} ${element.lastName}`);
     }
   });
-  return managers;
+  return gerentes;
 }
 
 module.exports = { isManager, getRelatedEmployees };
